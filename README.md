@@ -1,11 +1,11 @@
-#ASD Diagnosis in Children from fMRI Using XGBoost
-##MSc-Disssertation
+ASD Diagnosis in Children from fMRI Using XGBoost
+MSc-Disssertation
 
 
-##A collection of Python scripts and notebooks for preprocessing ABIDE rs-fMRI data, training an interpretable XGBoost classifier, and evaluating performance in pediatric ASD diagnosis.
+A collection of Python scripts and notebooks for preprocessing ABIDE rs-fMRI data, training an interpretable XGBoost classifier, and evaluating performance in pediatric ASD diagnosis.
 
 
-## Features
+Features
 
 * Download and preprocess ABIDE NYU pediatric subset (rs-fMRI + phenotypic data)
 * Extract CC200 atlas functional connectivity matrices
@@ -16,7 +16,7 @@
 
 
 
-## Installation
+Installation
 
 1. Clone the repository:
 
@@ -49,7 +49,7 @@
    python scripts/top_20_most_important_features.ipynb 
    ```
 
-## Files
+Files
 
 * `preprocess_data.py`: loads raw NIfTI, applies motion correction, normalization, filtering, nuisance regression, and extracts ROI-to-ROI correlation matrices.
 * `feature_selection_train_xgboost.ipynb`: trains an XGBoost classifier with 12-fold CV and logs performance metrics, performs SelectKBest on connectivity features and concatenates phenotypic features.
